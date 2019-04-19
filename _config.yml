@@ -1,5 +1,5 @@
-title: My personal blog - Adam Neilson
-email: your-email@domain.com
+title: Lauren Ramgattie
+email: lramgattie@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -10,9 +10,8 @@ url: "https://lorashley.github.io" # the base hostname & protocol for your site,
 
 # Author settings
 author: Lauren Ramgattie # add your name
-author-pic: adam-face.jpg
-about-author: Hey everyone, I'm Angie! I’m a atmospheric science student at Monash University in Melbourne.
-
+author-pic: cherryblossoms.jpg
+about-author: I'm Lor.
 # Contact links
 email: # Add your Email address
 phone: # Add your Phone number
@@ -28,7 +27,7 @@ pinterest: # Add your Pinterest handle
 mailchimp: # Add your MailChimp form identifier.
 
 # Disqus
-discus_identifier: mr-brown # Add your discus identifier
+discus_identifier: lorashley # Add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
