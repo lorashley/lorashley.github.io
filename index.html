@@ -4,7 +4,7 @@ layout: home-page
 <ol class="post-card-box clearfix">
 
   <li>
-    {% for post in paginator.posts limit:1  %}
+    {% for post in paginator.posts limit:0 %}
     <div class="post-card">
       <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
@@ -17,7 +17,7 @@ layout: home-page
   </li>
 
   <li>
-    {% for post in site.categories.portfolio limit:1  %}
+    {% for post in site.categories.portfolio limit:0  %}
     <div class="post-card">
       <a href="/portfolio" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
