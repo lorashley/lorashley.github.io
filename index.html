@@ -1,17 +1,19 @@
 ---
 layout: list
 ---
-<div class="post-card">
-{% for post in site.posts limit:1 %}
-  <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
-{% endfor %}
-</div>
+<ol class="post-card-box clearfix">
+  <div class="post-card">
+  {% for post in site.posts limit:1 %}
+    <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
+  {% endfor %}
+  </div>
 
-<div class="post-card">
-{% for post in site.categories.portfolio limit:1  %}
-  <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
-{% endfor %}
-</div>
+  <div class="post-card">
+  {% for post in site.categories.portfolio limit:1  %}
+    <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
+  {% endfor %}
+  </div>
+</ol>
 
 
 <ol class="post-card-box clearfix">
