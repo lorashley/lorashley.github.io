@@ -10,12 +10,15 @@ layout: list
 
   <div class="post-card">
   {% for post in site.categories.portfolio limit:1  %}
-    <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
+    <a href="/portfolio" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
   {% endfor %}
+  <div class="post-card-body">
+    <a href="/blog" class="post-card-link"><h3 class="post-card-title">Blog</h3></a>
+  </div>
   </div>
 </ol>
 
-
+<!---
 <ol class="post-card-box clearfix">
 
   <li>
@@ -43,3 +46,4 @@ layout: list
   </li>
 
 </ol>
+-->
