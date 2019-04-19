@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Let's get vulnerable
-categories: ['art']
+categories: ['portfolio']
 tags: diy project
 comments: true
 image: https://lh3.googleusercontent.com/OUSngenezQeTvcaQxLf9Ouqh1CnQPwn8EVpcx4wvaNqRgqyX0vRc9mU80fiZZUxig8yI1V5NPM3JZ6Ig9y1U3xC2MOw38vL_Qz3mr3FbtSjBCg7PPKgy4WfiavyJX7cBUV74ZM-bLPA=w2400
 ---
 
-Today will mark my first day of going back to school. 
+Today will mark my first day of going back to school.
 
 After some introspection and learning about UX (User Experience), I decided to enroll into
 an [Interactive Design Certificate](https://www.northeastern.edu/graduate/program/graduate-certificate-in-interactive-design-228/)
@@ -19,9 +19,9 @@ creative field, so it felt like a necessary step.
 
 I'm extremely excited, but my rather new, small insta account is going to hopefully get
 *really vulnerable*. I'm going to be working on stuff and it's going to look like shit or
-like beautiful shit. 
+like beautiful shit.
 
-Regardless: 
+Regardless:
 
 I'm going to share it. <br>
 I'm going to be self-conscious. <br>
@@ -34,7 +34,7 @@ I'm going to show my work. <br>
 
 I did one class, got a new position at my company, and it became hard to manage both.
 It was a really great experience, so I'll share my works. I'd like to take more classes,
-but maybe in a different program that does require so much classroom commitment. 
+but maybe in a different program that does require so much classroom commitment.
 
 #### Working with Color
 ![Learning about color](https://lh3.googleusercontent.com/Qpuk8dgRH3M7_e-0yRrjWGADurQvlW3UOA8723ecCJos5-MiNvFruOkWRkWn5Qw-JQCymgjvUxvmfJcKnFdGAmuUz1y8Q7sKd3dBwGg5M4sxcNiQxd_yIIQxYQH29G-vr2C-TK-p4kg=w2400)
@@ -64,7 +64,7 @@ Loish features strong women characters in her work and is known for portraying a
 ![Final in progress - Coloring](https://lh3.googleusercontent.com/pP3GzdbgFWXUp4zHfDcmftesMPx4z_GJsJNqUsvhj4RkSpRhSAI6F3U78il1CC9-NAMXW88XhtgDY5OOtDlQ249_M00TFmPctykgotcqgm1262x6L9XKLQCMNbdWPstjyD_MLuUPR1E=w2400)
 
 Honestly, I was so proud of my work. Even my instructor was highly impressed (for a brand new art student).
- 
+
 ![Final - Printed](https://lh3.googleusercontent.com/0l4AtTLIv-Yv-9qHb8kPYN8Q9M1DJeQ_rrVwj8DPbx7ucmLYqp5i8M5iB5AlqbgjxoXQh6bpgSfkrvIbjIR7628-p44YNTtshY-5SmsgSXhmKgnyb6qM3FHp2J1ubJE67egD8eHZSS4=w2400)
 
-I wanted to hold myself accountable and try to create things more often to get better, but it hasn't happened yet. Everytime I start a project (for instance, pet portraits), I feel like it looks like garbage, I get discouraged, and stop. I am sure I'll try it again, but for now let's leave it here haha! 
+I wanted to hold myself accountable and try to create things more often to get better, but it hasn't happened yet. Everytime I start a project (for instance, pet portraits), I feel like it looks like garbage, I get discouraged, and stop. I am sure I'll try it again, but for now let's leave it here haha!
