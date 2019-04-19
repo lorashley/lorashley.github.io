@@ -2,12 +2,14 @@
 layout: list
 ---
 {% for post in site.posts limit:1 %}
-<a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
+  <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
 {% endfor %}
 
 {% for post in site.categories.portfolio limit:1  %}
-<a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
+  <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )"></a>
 {% endfor %}
+
+
 <ol class="post-card-box clearfix">
 
   <li>
