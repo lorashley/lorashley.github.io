@@ -1,10 +1,10 @@
 ---
-layout: home-page
+layout: list
 ---
 <ol class="post-card-box clearfix">
 
   <li>
-    {% for post in site.posts limit:0 %}
+    {% for post in site.posts limit:1 %}
     <div class="post-card">
       <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
@@ -17,7 +17,7 @@ layout: home-page
   </li>
 
   <li>
-    {% for post in site.categories.portfolio limit:0  %}
+    {% for post in site.categories.portfolio limit:1  %}
     <div class="post-card">
       <a href="/portfolio" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
