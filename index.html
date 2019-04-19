@@ -4,29 +4,31 @@ layout: list
 <ol class="post-card-box clearfix">
 
   <li>
-    {% for post in site.posts limit:1 %}
     <div class="post-card">
+      {% for post in site.posts limit:1 %}
       <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
+      {% endfor %}
 
       <div class="post-card-body">
         <a href="/blog" class="post-card-link"><h3 class="post-card-title">Blog</h3></a>
       </div>
     </div>
-    {% endfor %}
+
   </li>
 
   <li>
-    {% for post in site.categories.portfolio limit:1  %}
     <div class="post-card">
+      {% for post in site.categories.portfolio limit:1  %}
       <a href="/portfolio" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
+      {% endfor %}
 
       <div class="post-card-body">
         <a href="/portfolio" class="post-card-link"><h3 class="post-card-title">Portfolio</h3></a>
       </div>
     </div>
-    {% endfor %}
+
   </li>
 
 </ol>
