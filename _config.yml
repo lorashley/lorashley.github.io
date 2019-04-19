@@ -3,7 +3,7 @@ email: lramgattie@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Lauren Ramgattie stuff
 permalink: ':title/'
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lorashley.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
