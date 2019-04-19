@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 <ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
   <li>
     <div class="post-card">
       <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{post.image}} )">
