@@ -4,7 +4,7 @@ title: My microblading experience!
 categories: ['beauty']
 comments: true
 tags: microblading cosmetic-tattoo brows beauty
-image: http://i.imgur.com/bxZE6tX.jpg
+image: https://cdn.pixabay.com/photo/2015/09/10/14/48/gradient-934515_1280.jpg
 ---
 
 Microblading was something I've wanted for a while. I researched the process heavily, but there were still surprises in the outcome.
@@ -16,6 +16,12 @@ This is a before and after at the time of my first microblading session.
 <!--more-->
 
 ## The Process
+<center><figure>
+  <img alt="microblading 1 day later" src="http://i.imgur.com/bxZE6tX.jpg" width="300">
+  <figcaption>1 day later</figcaption>
+</figure>
+</center>
+
 I arrived for my session and my artist worked with my facial structure, current eyebrow shape, and eyebrow desires to draw on eyebrows to my face.
 Once I was happy with them she put on the numbing cream and we waited about 10-15 minutes for it to sink it. She began the tattooing which didn't hurt at first.
 I was sure that it was going to be a breeze and **then** I felt the pain. Maybe the numbing cream was wearing off or maybe I was sensitive. Regardless, for me
