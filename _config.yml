@@ -13,18 +13,18 @@ author: Lauren Ramgattie # add your name
 author-pic: cherryblossoms.jpg
 about-author: I'm Lor.
 # Contact links
-email: # Add your Email address
-phone: # Add your Phone number
-website: # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
-#github: artemsheludko # Add your Github handle
+email: lramgattie@gmail.com # Add your Email address
+#phone: # Add your Phone number
+#website: # Add your website, do not add http://
+linkedin: laurenramgattie # Add your Linkedin handle
+github: lorashley # Add your Github handle
 #twitter: '@artemsheludko_' # Add your Twitter handle
-facebook: # Add your Facebook handle
-instagram: # Add your Instagram handle
-pinterest: # Add your Pinterest handle
+#facebook: # Add your Facebook handle
+#instagram: # Add your Instagram handle
+pinterest: lorashley # Add your Pinterest handle
 
 # Newsletter
-mailchimp: # Add your MailChimp form identifier.
+#mailchimp: # Add your MailChimp form identifier.
 
 # Disqus
 discus_identifier: lorashley # Add your discus identifier
