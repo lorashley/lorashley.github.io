@@ -1,6 +1,13 @@
 ---
 layout: list
 ---
+{% for post in site.posts limit:1 %}
+  {{post.title}}
+{% endfor %}
+
+{% for post in site.categories.portfolio limit:1  %}
+  {{post.title}}
+{% endfor %}
 <ol class="post-card-box clearfix">
 
   <li>
@@ -9,12 +16,10 @@ layout: list
       <a href="/blog" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
       {% endfor %}
-
       <div class="post-card-body">
         <a href="/blog" class="post-card-link"><h3 class="post-card-title">Blog</h3></a>
       </div>
     </div>
-
   </li>
 
   <li>
@@ -23,12 +28,10 @@ layout: list
       <a href="/portfolio" class="post-card-image" style="background-image: url( {{post.image}} )">
       </a>
       {% endfor %}
-
       <div class="post-card-body">
         <a href="/portfolio" class="post-card-link"><h3 class="post-card-title">Portfolio</h3></a>
       </div>
     </div>
-
   </li>
 
 </ol>
