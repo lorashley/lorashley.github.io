@@ -1,34 +1,31 @@
-title: My personal blog - Adam Neilson
-email: your-email@domain.com
+title: Lauren Ramgattie
+email: lramgattie@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Lauren Ramgattie stuff
 permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://lorashley.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
 author: Lauren Ramgattie # add your name
-author-pic: adam-face.jpg
-about-author: Hey everyone, I'm Angie! I’m a atmospheric science student at Monash University in Melbourne.
-
+author-pic: lauren-logo.JPG
+about-author: A Caribbean-American creator of a lot of random things.
 # Contact links
-email: # Add your Email address
+email: lramgattie@gmail.com# Add your Email address
 phone: # Add your Phone number
 website: # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
+linkedin: laurenramgattie# Add your Linkedin handle
 #github: artemsheludko # Add your Github handle
 #twitter: '@artemsheludko_' # Add your Twitter handle
 facebook: # Add your Facebook handle
-instagram: # Add your Instagram handle
-pinterest: # Add your Pinterest handle
+instagram: lorashley__# Add your Instagram handle
+pinterest: lorashley# Add your Pinterest handle
 
 # Newsletter
 mailchimp: # Add your MailChimp form identifier.
 
 # Disqus
-discus_identifier: mr-brown # Add your discus identifier
+discus_identifier: lorashley # Add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
