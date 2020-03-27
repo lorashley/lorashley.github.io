@@ -1,7 +1,7 @@
 .main-header {
   font-family: 'Lato', sans-serif;
   padding: 15px 0;
-  background-color: $medium-pink;
+  background-color: linear-gradient(to bottom, $light-pink, $medium-pink);
   box-shadow: 0px -5px 15px rgba(0,0,0,.3);
 
   .header-flex {
