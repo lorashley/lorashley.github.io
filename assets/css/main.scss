@@ -25,7 +25,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: $dark-gray;
   margin: 0;
-  background-color: $light-pink;
+  background: linear-gradient(to bottom, $medium-pink 0%, $medium-purple 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -97,13 +97,13 @@ pre {
 }
 
 ::-moz-selection {
-  background: $medium-pink;
-  color: #ffffff;
+  background: $pale-blue;
+  color: $light-pink;
 }
 
 ::selection {
-  background: $medium-pink;
-  color: #ffffff;
+  background: $pale-blue;
+  color: $light-pink;
 }
 
 .clearfix::before, .clearfix::after {
