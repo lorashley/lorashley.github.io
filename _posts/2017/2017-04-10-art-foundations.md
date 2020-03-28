@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Let's get vulnerable
-categories: ['portfolio']
+title: Art Foundations at Northeastern
+categories: ['portfolio', 'UX', 'ART']
 tags: diy project
 comments: true
 image: https://lh3.googleusercontent.com/OUSngenezQeTvcaQxLf9Ouqh1CnQPwn8EVpcx4wvaNqRgqyX0vRc9mU80fiZZUxig8yI1V5NPM3JZ6Ig9y1U3xC2MOw38vL_Qz3mr3FbtSjBCg7PPKgy4WfiavyJX7cBUV74ZM-bLPA=w2400
