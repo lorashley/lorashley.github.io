@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Art Foundations at Northeastern
+title: Art Foundations
 categories: ['portfolio', 'UX', 'ART']
 tags: diy project
 comments: true
