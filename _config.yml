@@ -1,7 +1,7 @@
 title: Lauren Ramgattie
 email: lramgattie@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A collection of works by Lauren Ramgattie. Developer, UX Student, and Amateur Illustrator. 
+  A collection of works by Lauren Ramgattie. Developer, UX Student, and Amateur Illustrator.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lorashley.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,7 +9,7 @@ url: "https://lorashley.github.io" # the base hostname & protocol for your site,
 # Author settings
 author: Lauren Ramgattie # add your name
 author-pic: cherryblossoms.jpg
-about-author: A Caribbean-American 🇹🇹🇺🇸 creator.
+about-author: A Carib-American 🇺🇸🇹🇹 creator.
 
 # Contact links
 email: lramgattie@gmail.com # Add your Email address
@@ -21,6 +21,7 @@ github: lorashley # Add your Github handle
 #facebook: # Add your Facebook handle
 instagram: sugarcanestudio_ # Add your Instagram handle
 pinterest: lorashley # Add your Pinterest handle
+nintendo: nin.codes/lor #Use nin.codes to create a link to your code
 
 # Newsletter
 #mailchimp: # Add your MailChimp form identifier.
