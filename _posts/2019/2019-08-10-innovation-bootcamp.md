@@ -4,7 +4,7 @@ title: Innovation Boot Camp (HF715)
 categories: ['portfolio', 'UX', 'GRAD']
 tags: ux bootcamp research prototyping hf715
 comments: true
-image: https://lh3.googleusercontent.com/FDzrHuoUkwWC5MxLLgUIjdxFEMI-wZUtI2yjZrOJkY0QgB401lCSFeuA6d6buIEmn47DWn6w0T3EvFdmSSQTLSKaqeVl7p56F-6NsbojR1DhC6UI2E-5xPF6bhChSW-L3zrtWTYdscukE-kwCDoDFQyir8l7aBp4CC1nLxHThlGl_7aooGUPHIjSZk3Kg_m90t_Zb97Z_SUOfxZPPONPeEb4F0e9Rc6nydu--2xUrABYOVkvpsIoX_d9YMN2_q5ceACMFY2MR4QY0puAkztFH0PLeCZCvi2kSOEXvYCd8c3-FT8rVfe2ka3EswWGxNiWi39K702BcbUtf7FbYOQmq5cBQZfqE0aw8mloIM16eNpXNMfEPkqIZykI03B8iOQyHoOZWsWasE-kXIR47-EzfscI7Zj1rzOJzc4zZimJ40AI3ijm9GwkZYx1-jO9Kz2NU1jHOenH54MRTtuDJmeOsvVv8n44YEzN2OCEvapWMKS8pBqeEYRDJRa-OYTd3106bwRD0-fwOfYONx3Ad_nRuEv_CfySg8kUm1BHDLtTQRg9W8ab-u9JBJhD-PnD2JKFPzjz9hnSfDZ9KrVS7eJNROYcgAzCRTV1WaS003Yn-VP5cHvHAMONkRI7EYDKtx9D9YMzY0t5bAZ8J9taohgQX4PwovAQUodmHWvCTDShdrYg5Yk1ehsKI1eKIabxBq8=w2048-h1536-no
+image: https://i.imgur.com/z7yZ4P8.jpg
 ---
 
 #### TLDR; Personal Deliverables
