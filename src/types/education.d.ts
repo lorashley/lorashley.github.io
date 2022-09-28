@@ -4,4 +4,5 @@ export type EducationProps = {
   institution: string;
   link?: string;
   img?: string;
+  tags?: string[];
 };

@@ -7,7 +7,17 @@ import educationData from "../../static/data/education";
 import { CompanyProps } from "../../types/company";
 import { EducationProps } from "../../types/education";
 
-export default function Content() {
+type ContentProps = {
+  filterContent: string;
+};
+
+export default function Content(props: ContentProps) {
+  const educationArray = educationData.filter((e) => {
+    if (props.filterContent !== "All") {
+      return e.tags.includes(props.filterContent);
+    }
+    return true;
+  });
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} textAlign="left" justifyContent="center">
@@ -18,7 +28,7 @@ export default function Content() {
           ))}
           <Typography variant="h5">Education</Typography>
           <ImageList sx={{ height: 450 }} cols={6} rowHeight={164}>
-            {educationData.map((e: EducationProps) => (
+            {educationArray.map((e: EducationProps) => (
               <ResumeItem key={e.name} {...e} />
             ))}
           </ImageList>
