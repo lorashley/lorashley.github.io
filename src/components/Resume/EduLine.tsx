@@ -6,9 +6,11 @@ export default function EduLine(props: EducationProps) {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <Typography variant="subtitle1">
-          {props.name}, {props.institution}, {props.year}
-        </Typography>
+        <a href={props.link} target="_blank">
+          <Typography variant="subtitle1">
+            {props.name}, {props.institution}, {props.year}
+          </Typography>
+        </a>
       </Grid>
     </Grid>
   );
