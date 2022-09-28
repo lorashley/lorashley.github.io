@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "../../built/local/tsc.js",
+    "sourceMap": true,
+    "typeRoots": ["node_modules/@types", "src/types"]
+  },
+  "include": [
+    "components/Solution",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
