@@ -1,11 +1,11 @@
 import * as React from "react";
 import {
-  Button,
   Box,
   Modal,
   Grid,
   Typography,
   ImageListItem,
+  ImageListItemBar,
 } from "@mui/material";
 import { EducationProps } from "../../types/education";
 
@@ -21,10 +21,14 @@ const style = {
   p: 4,
 };
 
-export default function EduItem(props: EducationProps) {
+export default function ResumeItem(props: EducationProps) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const [hover, setHover] = React.useState(false);
+  const showHover = () => setHover(true);
+  const hideHover = () => setHover(false);
 
   return (
     <div>
@@ -35,7 +39,19 @@ export default function EduItem(props: EducationProps) {
           alt={props.name}
           loading="lazy"
           onClick={handleOpen}
+          onMouseEnter={showHover}
+          onMouseLeave={hideHover}
         />
+        {hover && (
+          <ImageListItemBar
+            sx={{
+              background:
+                "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, " +
+                "rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
+            }}
+            title={props.name}
+          />
+        )}
       </ImageListItem>
       <Modal
         open={open}

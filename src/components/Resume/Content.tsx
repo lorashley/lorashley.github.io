@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Grid, ImageList, Typography } from "@mui/material";
 import CompanyLine from "./CompanyLine";
-import EduItem from "./EduItem";
+import ResumeItem from "./ResumeItem";
 import companyData from "../../static/data/company";
 import educationData from "../../static/data/education";
 import { CompanyProps } from "../../types/company";
@@ -19,7 +19,7 @@ export default function Content() {
           <Typography variant="h5">Education</Typography>
           <ImageList sx={{ height: 450 }} cols={6} rowHeight={164}>
             {educationData.map((e: EducationProps) => (
-              <EduItem key={e.name} {...e} />
+              <ResumeItem key={e.name} {...e} />
             ))}
           </ImageList>
         </Grid>
