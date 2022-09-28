@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Grid } from "@mui/material";
 import Header from "../components/Resume/Header";
-
+import Content from "../components/Resume/Content";
 import avatar from "../static/images/featheredcartoonme.png";
 
 export default function Resume() {
@@ -15,6 +15,8 @@ export default function Resume() {
           location="🌊 Fort Lauderdale, FL"
           avatar={avatar}
         />
+
+        <Content />
       </Grid>
     </Grid>
   );

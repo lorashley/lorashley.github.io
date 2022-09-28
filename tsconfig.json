@@ -2,6 +2,7 @@
   "compilerOptions": {
     "module": "system",
     "moduleResolution": "node",
+    "allowJs": true,
     "jsx": "preserve",
     "noImplicitAny": true,
     "removeComments": true,
@@ -10,12 +11,6 @@
     "sourceMap": true,
     "typeRoots": ["node_modules/@types", "src/types"]
   },
-  "include": [
-    "components/Solution",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.jsx"
-  ],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"]
 }
