@@ -62,7 +62,7 @@ export default function ResumeItem(props: EducationProps) {
         <Box sx={style}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <a href={props.link} target="_blank">
+              <a href={props.link} target="_blank" rel="noreferrer nofollow">
                 <Typography variant="subtitle1">
                   {props.name}, {props.institution}, {props.year}
                 </Typography>

@@ -1,4 +1,6 @@
-const educationData = [
+import { EducationProps } from "../../types/education";
+
+const educationData: EducationProps[] = [
   {
     name: "Advanced React/JS Bootcamp",
     institution: "Scrimba",
