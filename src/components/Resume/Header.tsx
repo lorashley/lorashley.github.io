@@ -1,9 +1,15 @@
 import * as React from "react";
 import { Avatar, Grid, Typography } from "@mui/material";
 
-import avatar from "../../static/images/featheredcartoonme.png";
+type HeaderProps = {
+  avatar: string;
+  name: string;
+  title: string;
+  email: string;
+  location: string;
+};
 
-export default function Header() {
+export default function Header(props: HeaderProps) {
   return (
     <Grid container spacing={2}>
       <Grid
@@ -15,23 +21,21 @@ export default function Header() {
         justifyContent="flex-end"
       >
         <Avatar
-          alt="Cindy Baker"
-          src={avatar}
+          alt={props.name}
+          src={props.avatar}
           sx={{ width: 200, height: 200 }}
         />
       </Grid>
       <Grid item xs={9} textAlign="left" justifyContent="center">
         <Grid item xs={12}>
-          <Typography variant="h2">Lauren Ramgattie</Typography>
+          <Typography variant="h2">{props.name}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h5">
-            Product Developer & Software Engineer
-          </Typography>
+          <Typography variant="h5">{props.title}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="subtitle1">📧 lramgattie[at]gmail</Typography>
-          <Typography variant="subtitle1">🌊 Fort Lauderdale, FL</Typography>
+          <Typography variant="subtitle1">{props.email}</Typography>
+          <Typography variant="subtitle1">{props.location}</Typography>
         </Grid>
       </Grid>
     </Grid>
