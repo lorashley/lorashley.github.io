@@ -1,5 +1,6 @@
 import "./App.css";
 import Resume from "./pages/resume";
+import Footer from "./components/Footer";
 
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -25,6 +26,7 @@ function App() {
             <Grid item xs={12} key={index}>
               <ThemeProvider theme={theme}>
                 <Resume />
+                <Footer />
               </ThemeProvider>
             </Grid>
           ))}
