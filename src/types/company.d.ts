@@ -3,4 +3,10 @@ export type CompanyProps = {
   year: string;
   src?: string;
   tags: string[];
+  experiences: ExperienceProps;
+};
+
+export type ExperienceProps = string[];
+export type ExperienceItemProps = {
+  children: string[];
 };

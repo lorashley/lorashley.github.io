@@ -1,18 +1,19 @@
 import * as React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, ImageList, Typography } from "@mui/material";
 import CompanyLine from "./CompanyLine";
-import EducationItem from "./EducationItem";
 import { companySection, companyData } from "../../static/data/company";
-import { educationSection, educationData } from "../../static/data/education";
+import { educationSection, educationItems } from "../../static/data/education";
 import { CompanyProps } from "../../types/company";
-import { EducationProps } from "../../types/education";
+import ExperienceItem from "./ExperienceItem";
+import ImageItem from "./ImageItem";
+import SectionHeader from "./SectionHeader";
 
 type ContentProps = {
   filterContent: string;
 };
 
 export default function Content(props: ContentProps) {
-  const educationArray = educationData.filter((e) => {
+  const educationArray = educationItems.filter((e) => {
     if (props.filterContent !== "All") {
       return e.tags.includes(props.filterContent);
     }
@@ -24,18 +25,32 @@ export default function Content(props: ContentProps) {
         <Grid item xs={12}>
           <>
             {companySection.tags.includes(props.filterContent) && (
-              <Typography variant="h5">{companySection.name}</Typography>
+              <SectionHeader>{companySection.name}</SectionHeader>
             )}
             {companyData.map((c: CompanyProps) => (
-              <CompanyLine key={c.name} {...c} />
+              <>
+                <CompanyLine key={c.name} {...c} />
+                <ul>
+                  {c.experiences.map((experience) => (
+                    <ExperienceItem> {experience}</ExperienceItem>
+                  ))}
+                </ul>
+              </>
             ))}
 
             {educationSection.tags.includes(props.filterContent) && (
-              <Typography variant="h5">{educationSection.name}</Typography>
+              <SectionHeader>{educationSection.name}</SectionHeader>
             )}
-            {educationArray.map((e: EducationProps) => (
-              <EducationItem key={e.name} {...e} />
-            ))}
+            <ImageList
+              sx={{ width: "100%", height: 400 }}
+              variant="quilted"
+              cols={4}
+              rowHeight={150}
+            >
+              {educationArray.map((e) => (
+                <ImageItem key={e.title} {...e} />
+              ))}
+            </ImageList>
           </>
         </Grid>
       </Grid>
