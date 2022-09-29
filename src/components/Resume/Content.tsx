@@ -122,18 +122,12 @@ export default function Content(props: ContentProps) {
         <Grid item xs={12} textAlign="left" justifyContent="center">
           <Grid item xs={12}>
             <>
-              <SectionHeader>Works</SectionHeader>
-
-              {/*experiences.map((experience) => <ExperienceItem key={experience.id} {...experience}></ExperienceItem>)*/}
-              <SectionHeader>Made</SectionHeader>
-
-              <Grid item alignItems="center" justifyContent="center">
-                <ImageList sx={{ width: 500 }} cols={3} rowHeight={164}>
-                  {images.map((image) => (
-                    <ImageItem key={image.id} {...image} />
-                  ))}
-                </ImageList>
-              </Grid>
+              <SectionHeader>WORK</SectionHeader>
+              <ImageList sx={{ width: 500 }} cols={3} rowHeight={164}>
+                {images.map((image) => (
+                  <ImageItem key={image.id} {...image} />
+                ))}
+              </ImageList>
             </>
           </Grid>
         </Grid>
