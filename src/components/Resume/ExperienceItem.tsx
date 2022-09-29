@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box, Modal, Grid, Typography } from "@mui/material";
-import { ExperienceItemProps } from "../../types/company";
+import { Experience } from "../../types/experience";
 
 const style = {
   position: "absolute" as "absolute",
@@ -14,7 +14,7 @@ const style = {
   p: 4,
 };
 
-export default function ExperienceItem(props: ExperienceItemProps) {
+export default function ExperienceItem(props: Experience) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -25,7 +25,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
 
   return (
     <div>
-      <Typography variant="subtitle1">{props.children}</Typography>
+      <Typography variant="subtitle1" onClick={handleOpen}>{props.title}</Typography>
       <Modal
         open={open}
         onClose={handleClose}
@@ -36,6 +36,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <a href="" target="_blank" rel="noreferrer nofollow"></a>
+              {props.description}
             </Grid>
           </Grid>
         </Box>
