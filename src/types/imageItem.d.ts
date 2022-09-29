@@ -1,8 +1,9 @@
 export type ImageItemProps = {
-  title: string;
-  institution: string;
+  id: string;
+  img: string;
+  title?: string;
   link?: string;
-  img?: string;
+  institution?: string;
   tags?: string[];
   rows?: number;
   cols?: number;

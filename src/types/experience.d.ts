@@ -4,4 +4,5 @@ export type Experience = {
   description: string;
   //links?: string[];
   tags: string[];
+  mediaArray: string[];
 };

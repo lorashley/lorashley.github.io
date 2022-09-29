@@ -4,6 +4,7 @@
   "homepage": "https://lorashley.github.io/portfolio",
   "private": true,
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^15.13.1",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
