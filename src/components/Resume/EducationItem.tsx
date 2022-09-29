@@ -32,27 +32,9 @@ export default function ResumeItem(props: EducationProps) {
 
   return (
     <div>
-      <ImageListItem key={props.img}>
-        <img
-          src={`${props.img}?w=164&h=164&fit=crop&auto=format`}
-          srcSet={`${props.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-          alt={props.name}
-          loading="lazy"
-          onClick={handleOpen}
-          onMouseEnter={showHover}
-          onMouseLeave={hideHover}
-        />
-        {hover && (
-          <ImageListItemBar
-            sx={{
-              background:
-                "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, " +
-                "rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
-            }}
-            title={props.name}
-          />
-        )}
-      </ImageListItem>
+      <Typography variant="subtitle1">
+        {props.name}, {props.institution}, {props.year}
+      </Typography>
       <Modal
         open={open}
         onClose={handleClose}

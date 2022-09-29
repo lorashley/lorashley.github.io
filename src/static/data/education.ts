@@ -1,6 +1,11 @@
 import { EducationProps } from "../../types/education";
+import { ResumeSection } from "../../types/resumeSection";
 
-const educationData: EducationProps[] = [
+export const educationSection: ResumeSection = {
+  name: "Education",
+  tags: ["All", "Development", "Design"],
+};
+export const educationData: EducationProps[] = [
   {
     name: "Advanced React/JS Bootcamp",
     institution: "Scrimba",
@@ -41,5 +46,3 @@ const educationData: EducationProps[] = [
     tags: ["Development"],
   },
 ];
-
-export default educationData;

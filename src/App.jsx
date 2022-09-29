@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const lightTheme = createTheme({ palette: { mode: "light" } });
 function App() {

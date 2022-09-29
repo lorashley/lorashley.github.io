@@ -1,9 +1,9 @@
 import * as React from "react";
-import { Grid, ImageList, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import CompanyLine from "./CompanyLine";
-import ResumeItem from "./ResumeItem";
-import companyData from "../../static/data/company";
-import educationData from "../../static/data/education";
+import EducationItem from "./EducationItem";
+import { companySection, companyData } from "../../static/data/company";
+import { educationSection, educationData } from "../../static/data/education";
 import { CompanyProps } from "../../types/company";
 import { EducationProps } from "../../types/education";
 
@@ -22,16 +22,21 @@ export default function Content(props: ContentProps) {
     <Grid container spacing={2}>
       <Grid item xs={12} textAlign="left" justifyContent="center">
         <Grid item xs={12}>
-          <Typography variant="h5">Work Experience</Typography>
-          {companyData.map((c: CompanyProps) => (
-            <CompanyLine key={c.name} {...c} />
-          ))}
-          <Typography variant="h5">Education</Typography>
-          <ImageList sx={{ height: 450 }} cols={6} rowHeight={164}>
-            {educationArray.map((e: EducationProps) => (
-              <ResumeItem key={e.name} {...e} />
+          <>
+            {companySection.tags.includes(props.filterContent) && (
+              <Typography variant="h5">{companySection.name}</Typography>
+            )}
+            {companyData.map((c: CompanyProps) => (
+              <CompanyLine key={c.name} {...c} />
             ))}
-          </ImageList>
+
+            {educationSection.tags.includes(props.filterContent) && (
+              <Typography variant="h5">{educationSection.name}</Typography>
+            )}
+            {educationArray.map((e: EducationProps) => (
+              <EducationItem key={e.name} {...e} />
+            ))}
+          </>
         </Grid>
       </Grid>
     </Grid>

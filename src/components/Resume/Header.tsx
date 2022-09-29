@@ -1,14 +1,6 @@
 import * as React from "react";
 
-import {
-  Avatar,
-  Box,
-  Chip,
-  Grid,
-  Paper,
-  Typography,
-  styled,
-} from "@mui/material";
+import { Avatar, Box, Chip, Grid, Typography, styled } from "@mui/material";
 
 type HeaderProps = {
   avatar: string;
@@ -20,7 +12,7 @@ type HeaderProps = {
   onChipClick: (item: string) => void;
 };
 
-const CHIPS = ["All", "Development", "Design", "Community", "Hobby"];
+const CHIPS = ["All", "Development", "Design", "Community"];
 
 const ListItem = styled("li")(({ theme }) => ({
   margin: theme.spacing(0.5),
@@ -29,11 +21,11 @@ const ListItem = styled("li")(({ theme }) => ({
 export default function Header(props: HeaderProps) {
   return (
     <Box m={2} p={3}>
-      <Grid container spacing={2}>
+      <Grid container spacing={12}>
         <Grid
           item
-          xs={3}
-          alignItems={"center"}
+          xs={4}
+          alignItems={"right"}
           container
           direction={"row"}
           justifyContent="flex-end"
@@ -44,9 +36,11 @@ export default function Header(props: HeaderProps) {
             sx={{ width: 200, height: 200 }}
           />
         </Grid>
-        <Grid item xs={9} textAlign="left" justifyContent="center">
+        <Grid item xs={8} textAlign="left" justifyContent="center">
           <Grid item xs={12}>
-            <Typography variant="h2">{props.name}</Typography>
+            <Typography variant="h3" sx={{ fontFamily: "Permanent Marker" }}>
+              {props.name}
+            </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h5">{props.title}</Typography>
