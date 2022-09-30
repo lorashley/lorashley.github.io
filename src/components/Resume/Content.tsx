@@ -118,21 +118,26 @@ export default function Content(props: ContentProps) {
     );
   } else {
     return (
-      <Grid container spacing={2}>
-        <Grid item xs={12} textAlign="left" justifyContent="center">
-          <Grid item xs={12}>
-            <>
-              <SectionHeader>creative</SectionHeader>
-              <ImageList sx={{ width: 500 }} cols={3} rowHeight={164}>
-                {images.map((image) =>
-                  props.filterContent == 'All' ||
-                  image.tags.includes(props.filterContent.toLowerCase()) ? (
-                    <ImageItem key={image.id} {...image} />
-                  ) : null
-                )}
-              </ImageList>
-            </>
-          </Grid>
+      <Grid
+        container
+        spacing={2}
+        xs={12}
+        display="flex"
+        textAlign="left"
+        justifyContent="center"
+      >
+        <Grid item>
+          <>
+            <SectionHeader>creative</SectionHeader>
+            <ImageList sx={{ width: 500 }} cols={3} rowHeight={164}>
+              {images.map((image) =>
+                props.filterContent == 'All' ||
+                image.tags.includes(props.filterContent.toLowerCase()) ? (
+                  <ImageItem key={image.id} {...image} />
+                ) : null
+              )}
+            </ImageList>
+          </>
         </Grid>
       </Grid>
     );
