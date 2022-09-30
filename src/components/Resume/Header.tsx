@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { Avatar, Box, Chip, Grid, Typography, styled } from "@mui/material";
+import { Avatar, Box, Chip, Grid, Typography, styled } from '@mui/material';
 
 type HeaderProps = {
   avatar: string;
@@ -12,9 +12,9 @@ type HeaderProps = {
   onChipClick: (item: string) => void;
 };
 
-const CHIPS = ["All", "Development", "Design", "Community"];
+const CHIPS = ['All', 'Development', 'Design', 'Community', 'Art'];
 
-const ListItem = styled("li")(({ theme }) => ({
+const ListItem = styled('li')(({ theme }) => ({
   margin: theme.spacing(0.5),
 }));
 
@@ -25,9 +25,9 @@ export default function Header(props: HeaderProps) {
         <Grid
           item
           xs={4}
-          alignItems={"right"}
+          alignItems={'right'}
           container
-          direction={"row"}
+          direction={'row'}
           justifyContent="flex-end"
         >
           <Avatar
@@ -38,7 +38,7 @@ export default function Header(props: HeaderProps) {
         </Grid>
         <Grid item xs={8} textAlign="left" justifyContent="center">
           <Grid item xs={12}>
-            <Typography variant="h3" sx={{ fontFamily: "Permanent Marker" }}>
+            <Typography variant="h3" sx={{ fontFamily: 'Permanent Marker' }}>
               {props.name}
             </Typography>
           </Grid>
@@ -53,9 +53,9 @@ export default function Header(props: HeaderProps) {
             item
             xs={12}
             sx={{
-              display: "flex",
-              flexWrap: "wrap",
-              listStyle: "none",
+              display: 'flex',
+              flexWrap: 'wrap',
+              listStyle: 'none',
               p: 0.5,
               m: 0,
             }}
@@ -66,7 +66,7 @@ export default function Header(props: HeaderProps) {
                 <Chip
                   label={chip}
                   onClick={() => props.onChipClick(chip)}
-                  color={chip === props.filterContent ? "primary" : "default"}
+                  color={chip === props.filterContent ? 'primary' : 'default'}
                 />
               </ListItem>
             ))}

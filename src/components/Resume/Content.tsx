@@ -122,11 +122,14 @@ export default function Content(props: ContentProps) {
         <Grid item xs={12} textAlign="left" justifyContent="center">
           <Grid item xs={12}>
             <>
-              <SectionHeader>WORK</SectionHeader>
+              <SectionHeader>creative</SectionHeader>
               <ImageList sx={{ width: 500 }} cols={3} rowHeight={164}>
-                {images.map((image) => (
-                  <ImageItem key={image.id} {...image} />
-                ))}
+                {images.map((image) =>
+                  props.filterContent == 'All' ||
+                  image.tags.includes(props.filterContent.toLowerCase()) ? (
+                    <ImageItem key={image.id} {...image} />
+                  ) : null
+                )}
               </ImageList>
             </>
           </Grid>
