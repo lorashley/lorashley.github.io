@@ -28,7 +28,7 @@ export default function ExperienceItem(props: Experience) {
     <div>
       <ImageListItem key={item.id} cols={1} rows={1}>
         <img
-          src={item.mediaArray[0]}
+          src={item.thumbnail}
           alt={item.title}
           loading="lazy"
           height={164}

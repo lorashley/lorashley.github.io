@@ -22,7 +22,6 @@ export default function Content(props: ContentProps) {
       const response = await client.getEntries({ content_type: 'experience' });
       setLoading(false);
       const responseData = response.items;
-      console.log(responseData);
       if (responseData) {
         cleanExperiences(responseData as []);
       } else {
@@ -45,12 +44,14 @@ export default function Content(props: ContentProps) {
       const mediaArray = fields.media.map((item: any) => {
         return 'https:' + item.fields.file.url;
       });
+      const thumbnail = 'https:' + fields.thumbnail.fields.file.url;
       const tags = fields.tags;
       const updatedExperience = {
         id,
         title,
         description,
         tags,
+        thumbnail,
         mediaArray,
       };
       console.log(updatedExperience);
@@ -65,7 +66,6 @@ export default function Content(props: ContentProps) {
       const response = await client.getEntries({ content_type: 'image' });
       setLoading(false);
       const responseData = response.items;
-      console.log(responseData);
       if (responseData) {
         cleanImages(responseData as []);
       } else {
@@ -78,7 +78,6 @@ export default function Content(props: ContentProps) {
   }, []);
 
   const cleanImages = useCallback((rawData: []) => {
-    console.log('cleaning data');
     const cleanImages = rawData.map((image: any) => {
       const { sys, fields } = image;
       const { id } = sys;
@@ -94,7 +93,6 @@ export default function Content(props: ContentProps) {
         tags,
         img,
       };
-      console.log(updatedImage);
       return updatedImage;
     });
     setImages(cleanImages);
@@ -122,7 +120,6 @@ export default function Content(props: ContentProps) {
       <Grid
         container
         spacing={2}
-        xs={12}
         display="flex"
         textAlign="left"
         justifyContent="center"
