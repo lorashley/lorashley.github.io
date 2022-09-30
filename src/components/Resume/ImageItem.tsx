@@ -1,15 +1,15 @@
-import * as React from "react";
-import { ImageListItem } from "@mui/material";
-import { ImageItemProps } from "../../types/imageItem";
+import * as React from 'react';
+import { ImageListItem } from '@mui/material';
+import { ImageItemProps } from '../../types/imageItem';
 
 const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
   width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
   boxShadow: 24,
   p: 4,
 };
@@ -30,18 +30,8 @@ export default function ImageItem(props: ImageItemProps) {
 
   return (
     <a href={item.link} target="_blank" rel="nofollow noreferrer">
-      <ImageListItem
-        key={item.id}
-        cols={item.cols || 1}
-        rows={item.rows || 1}
-        
-      >
-        <img
-          src={item.img}
-          alt={item.title}
-          loading="lazy"
-          height={164}
-        />
+      <ImageListItem key={item.id} cols={item.cols || 1} rows={item.rows || 1}>
+        <img src={item.img} alt={item.title} loading="lazy" height={164} />
       </ImageListItem>
     </a>
   );
