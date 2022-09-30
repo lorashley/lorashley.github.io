@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Modal, Grid, Typography, ImageListItem } from "@mui/material";
+import { ImageListItem } from "@mui/material";
 import { ImageItemProps } from "../../types/imageItem";
 
 const style = {
@@ -25,44 +25,24 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
 
 export default function ImageItem(props: ImageItemProps) {
   const item = props;
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   const [hover, setHover] = React.useState(false);
-  const showHover = () => setHover(true);
-  const hideHover = () => setHover(false);
 
   return (
-    <div>
+    <a href={item.link} target="_blank" rel="nofollow noreferrer">
       <ImageListItem
-        key={item.img}
+        key={item.id}
         cols={item.cols || 1}
         rows={item.rows || 1}
-        onClick={handleOpen}
+        
       >
         <img
-          {...srcset(item.img, 121, item.rows, item.cols)}
+          src={item.img}
           alt={item.title}
           loading="lazy"
+          height={164}
         />
       </ImageListItem>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <a href={item.link} target="_blank" rel="noreferrer nofollow">
-                <Typography variant="subtitle1"></Typography>
-              </a>
-            </Grid>
-          </Grid>
-        </Box>
-      </Modal>
-    </div>
+    </a>
   );
 }

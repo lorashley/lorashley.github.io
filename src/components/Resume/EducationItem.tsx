@@ -4,8 +4,6 @@ import {
   Modal,
   Grid,
   Typography,
-  ImageListItem,
-  ImageListItemBar,
 } from "@mui/material";
 import { EducationProps } from "../../types/education";
 
@@ -21,7 +19,7 @@ const style = {
   p: 4,
 };
 
-export default function ResumeItem(props: EducationProps) {
+export default function EducationItem(props: EducationProps) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
