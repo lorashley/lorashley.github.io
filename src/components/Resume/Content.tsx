@@ -5,6 +5,7 @@ import SectionHeader from './SectionHeader';
 import { client } from '../../client';
 
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import ExperienceItem from './ExperienceItem';
 
 type ContentProps = {
   filterContent: string;
@@ -128,8 +129,17 @@ export default function Content(props: ContentProps) {
       >
         <Grid item>
           <>
+            <SectionHeader>work</SectionHeader>
+            <ImageList sx={{ width: 800 }} cols={4} rowHeight={197}>
+              {experiences.map((experience) =>
+                props.filterContent == 'All' ||
+                experience.tags.includes(props.filterContent) ? (
+                  <ExperienceItem key={experience.id} {...experience} />
+                ) : null
+              )}
+            </ImageList>
             <SectionHeader>creative</SectionHeader>
-            <ImageList sx={{ width: 500 }} cols={3} rowHeight={164}>
+            <ImageList sx={{ width: 800 }} cols={4} rowHeight={197}>
               {images.map((image) =>
                 props.filterContent == 'All' ||
                 image.tags.includes(props.filterContent.toLowerCase()) ? (
