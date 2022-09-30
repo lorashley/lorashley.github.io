@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Box, ImageListItem, Modal, Grid, Typography } from '@mui/material';
+import { Box, ImageListItem, Modal, Grid } from '@mui/material';
 import { Experience } from '../../types/experience';
+import { Link } from 'react-router-dom';
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -20,20 +21,21 @@ export default function ExperienceItem(props: Experience) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const [hover, setHover] = React.useState(false);
-  const showHover = () => setHover(true);
-  const hideHover = () => setHover(false);
-
   return (
     <div>
-      <ImageListItem key={item.id} cols={1} rows={1}>
-        <img
-          src={item.thumbnail}
-          alt={item.title}
-          loading="lazy"
-          height={164}
-        />
-      </ImageListItem>
+      <Link
+        to={'/portfolio/' + item.title.toLowerCase().replace(/ /g, '-')}
+        state={{ experience: item }}
+      >
+        <ImageListItem key={item.id} cols={1} rows={1}>
+          <img
+            src={item.thumbnail}
+            alt={item.title}
+            loading="lazy"
+            height={164}
+          />
+        </ImageListItem>
+      </Link>
       <Modal
         open={open}
         onClose={handleClose}

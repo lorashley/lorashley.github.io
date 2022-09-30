@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&text=Lauren%Ramgattie");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&text=Lauren%Ramgattie');
 
 .App {
   text-align: center;
+  background-color: #faf0e6;
 }
 
 .App-logo {
@@ -22,4 +23,25 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App-footer {
+  /*position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;*/
+}
+
+.portfolio-page {
+  /*#C79563 for darker contrast*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
