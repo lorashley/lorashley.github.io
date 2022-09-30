@@ -3,7 +3,7 @@ import { Grid, Typography } from '@mui/material';
 
 export default function Footer() {
   return (
-    <div className="App-footer">
+    <div>
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography variant="subtitle1">
