@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://lorashley.github.io/portfolio",
+  "homepage": "https://lorashley.github.io/",
   "private": true,
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^15.13.1",
